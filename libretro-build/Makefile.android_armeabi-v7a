@@ -62,18 +62,13 @@ LDXFLAGS = $(PLATLDXFLAGS) $(RETROLDXFLAGS)
 ########
 # Tuning
 
-ifneq ($(DEBUG),)
-  CFLAGS   += -O0 -g
-  CXXFLAGS += -O0 -g
-else
   CFLAGS   += -O3 -DNDEBUG
   CXXFLAGS += -O3 -DNDEBUG
-endif
 
-ifneq ($(LOG_PERFORMANCE),)
-  CFLAGS   += -DLOG_PERFORMANCE
-  CXXFLAGS += -DLOG_PERFORMANCE
-endif
+#ifneq ($(LOG_PERFORMANCE),)
+#  CFLAGS   += -DLOG_PERFORMANCE
+#  CXXFLAGS += -DLOG_PERFORMANCE
+#endif
 
 ####################################
 # Variable setup for Makefile.common
