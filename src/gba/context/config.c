@@ -10,6 +10,7 @@
 #include "util/vfs.h"
 
 #include <sys/stat.h>
+#include <strings.h>
 
 #ifdef _WIN32
 #include <windows.h>

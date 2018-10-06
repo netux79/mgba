@@ -11,6 +11,8 @@
 #include "util/string.h"
 #include "util/vfs.h"
 
+#include <strings.h>
+
 #define MAX_LINE_LENGTH 128
 
 const uint32_t GBA_CHEAT_DEVICE_ID = 0xABADC0DE;
